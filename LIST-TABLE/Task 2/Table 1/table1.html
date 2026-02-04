@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2 Table</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#ffffff;
+            padding:30px;
+        }
+
+        /* ===== TABLE 1 ===== */
+        .title{
+            width:760px;
+            background:yellow;
+            border:3px solid black;
+            border-bottom:none;
+            text-align:center;
+            font-size:32px;
+            font-weight:bold;
+            padding:15px 0;
+            margin:auto;
+        }
+
+        .table1{
+            width:760px;
+            margin:auto;
+            border-collapse:collapse;
+            border:3px solid yellow;
+        }
+
+        .table1 th{
+            background:red;
+            color:white;
+            font-size:20px;
+            padding:15px;
+            border:3px solid yellow;
+        }
+
+        .table1 td{
+            background:#9acd32;
+            font-size:20px;
+            padding:15px;
+            text-align:center;
+            border:3px solid yellow;
+        }
+
+        /* ===== TABLE 2 ===== */
+        .table2{
+            width:900px;
+            margin:80px auto;
+            border-collapse:collapse;
+            border:3px solid black;
+        }
+
+        .table2 th{
+            background:#40e0d0;
+            font-size:24px;
+            padding:15px;
+            border:3px solid black;
+            text-align:center;
+        }
+
+        .table2 td{
+            font-size:20px;
+            padding:15px;
+            border:3px solid black;
+            vertical-align:middle;
+        }
+
+        .subhead{
+            background:#ffeb3b;
+            font-weight:bold;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== FIRST TABLE ===== -->
+<div class="title">Make HTML Table</div>
+
+<table class="table1">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+    </tr>
+    <tr>
+        <td>James</td>
+        <td>Jeo</td>
+        <td>CEO</td>
+        <td>$1300</td>
+    </tr>
+    <tr>
+        <td>Kate</td>
+        <td>Harns</td>
+        <td>Designer</td>
+        <td>$1000</td>
+    </tr>
+    <tr>
+        <td>Bryan</td>
+        <td>Brian</td>
+        <td>Team Leader</td>
+        <td>$700</td>
+    </tr>
+    <tr>
+        <td>Lesely</td>
+        <td>Pronic</td>
+        <td>Author</td>
+        <td>$500</td>
+    </tr>
+</table>
+
+<!-- ===== SECOND TABLE ===== -->
+<table class="table2">
+    <tr>
+        <th>Device</th>
+        <th>Brand</th>
+        <th colspan="2">Specifications</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Smartphone</td>
+        <td rowspan="3">Apple</td>
+        <td class="subhead">Model</td>
+        <td class="subhead">Storage</td>
+    </tr>
+
+    <tr>
+        <td>iPhone 12 Pro</td>
+        <td>256GB</td>
+    </tr>
+
+    <tr>
+        <td>iPhone SE</td>
+        <td>128GB</td>
+    </tr>
+
+    <tr>
+        <td>Laptop</td>
+        <td>HP</td>
+        <td colspan="2">15.6" Display</td>
+    </tr>
+
+    <tr>
+        <td>Tablet</td>
+        <td>Samsung</td>
+        <td colspan="2">10.5" Display</td>
+    </tr>
+</table>
+
+</body>
+</html>

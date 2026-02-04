@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pricing & Table</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+}
+
+/* ===== PRICING TABLE ===== */
+.pricing{
+    width:900px;
+    margin:40px auto;
+    display:flex;
+    border:1px solid #ddd;
+}
+
+.plan{
+    width:300px;
+    text-align:center;
+    border-right:1px solid #ddd;
+}
+
+.plan:last-child{
+    border-right:none;
+}
+
+.plan h3{
+    margin:20px 0 5px;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#777;
+}
+
+.price{
+    font-size:42px;
+    margin:5px 0;
+}
+
+.price span{
+    font-size:14px;
+    color:#999;
+}
+
+.plan ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.plan ul li{
+    padding:12px;
+    border-top:1px solid #eee;
+    font-size:14px;
+}
+
+.btn{
+    margin:20px 0;
+    padding:12px 30px;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+.basic .btn,
+.premier .btn{
+    background:#1c2b36;
+}
+
+.popular{
+    border:2px solid #f28c79;
+}
+
+.popular h3,
+.popular .price{
+    color:#f28c79;
+}
+
+.popular .btn{
+    background:#f28c79;
+}
+
+/* ===== MERGED TABLE ===== */
+.merged{
+    width:600px;
+    margin:60px auto;
+    border-collapse:collapse;
+    background:#e6e6e6;
+}
+
+.merged caption{
+    font-size:22px;
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+.merged th,
+.merged td{
+    border:2px solid #555;
+    padding:10px;
+    text-align:center;
+    font-size:16px;
+}
+
+.merged th{
+    background:#d9d9d9;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PRICING TABLE -->
+<div class="pricing">
+
+    <div class="plan basic">
+        <h3>BASIC</h3>
+        <div class="price">$30 <span>/MO</span></div>
+        <ul>
+            <li>256MB Memory</li>
+            <li>1 User</li>
+            <li>1 Website</li>
+            <li>1 Domain</li>
+            <li>Unlimited Bandwidth</li>
+            <li>24/7 Support</li>
+        </ul>
+        <button class="btn">SELECT</button>
+    </div>
+
+    <div class="plan popular">
+        <h3>POPULAR</h3>
+        <div class="price">$60 <span>/MO</span></div>
+        <ul>
+            <li>512MB Memory</li>
+            <li>3 Users</li>
+            <li>5 Websites</li>
+            <li>7 Domains</li>
+            <li>Unlimited Bandwidth</li>
+            <li>24/7 Support</li>
+        </ul>
+        <button class="btn">SELECT</button>
+    </div>
+
+    <div class="plan premier">
+        <h3>PREMIER</h3>
+        <div class="price">$90 <span>/MO</span></div>
+        <ul>
+            <li>1024MB Memory</li>
+            <li>5 Users</li>
+            <li>10 Websites</li>
+            <li>10 Domains</li>
+            <li>Unlimited Bandwidth</li>
+            <li>24/7 Support</li>
+        </ul>
+        <button class="btn">SELECT</button>
+    </div>
+
+</div>
+
+<!-- MERGED CELLS TABLE -->
+<table class="merged">
+    <caption>A test table with merged cells</caption>
+
+    <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Average</th>
+        <th rowspan="2">Red eyes</th>
+    </tr>
+
+    <tr>
+        <th>height</th>
+        <th>weight</th>
+    </tr>
+
+    <tr>
+        <th>Males</th>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td>40%</td>
+    </tr>
+
+    <tr>
+        <th>Females</th>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+    </tr>
+</table>
+
+</body>
+</html>
