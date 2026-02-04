@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color:  rgb(17, 19, 22);
+}
+
+.main {
+    display: flex;
+    height: 680px;
+    font-family: Arial, sans-serif;
+}
+
+.leftSide {
+    background-color: rgb(17, 19, 22);
+    width: 57%;
+    border-bottom: 1px solid rgb(40, 74, 84);
+    ;
+}
+
+.leftSide p {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    padding-top: 0px;
+    margin-left: 90px;
+    margin-right: 50px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff7a18, #ff2ea6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+.logoClass {
+    width: 90px;
+    height: 90px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.homeImg {
+    width: 450px;
+}
+
+.rightSide {
+    width: 43%;
+    background-color: rgb(21, 34, 39);
+    color: white;
+    border-left: 3px solid rgb(40, 74, 84);
+    border-bottom: 1px solid rgb(40, 74, 84);
+    ;
+}
+
+.rightSide p {
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rightSide input {
+    width: 78%;
+    margin-top: 20px;
+    padding: 22px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgb(50, 93, 97);
+    color: white;
+}
+
+
+.rightSide button {
+    width: 85%;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 35px;
+    background-color: rgb(80, 80, 251);
+    border: 1px solid rgb(50, 93, 97);
+    color: white;
+    font-size: 17px;
+}
+
+#forgrtPass {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 0px;
+}
+
+#otherBTN {
+    background-color: transparent;
+    margin-top: 60px;
+}
+
+#newAccount {
+    background-color: transparent;
+    color: rgb(65, 158, 209);
+    border: 1px solid rgb(65, 158, 209);
+}
+
+#metaTXT {
+    margin-top: 15px;
+    margin-left: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.secondMain {
+    color: white; 
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.secondMain p {
+    font-weight: 500;
+}
