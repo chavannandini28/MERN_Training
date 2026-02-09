@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Grid</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #9b4de3;
+  padding: 30px;
+}
+
+/* GRID LAYOUT */
+.grid-container {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 180px 70px;
+  gap: 12px;
+
+  grid-template-areas:
+    "sidebar navbar navbar navbar"
+    "sidebar main   main   main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+}
+
+/* AREAS */
+.navbar   { grid-area: navbar;   background: #7ff6ff; }
+.sidebar  { grid-area: sidebar;  background: #48e5f2; }
+.main     { grid-area: main;     background: #7ff6ff; }
+
+.content1 { grid-area: content1; background: #7dffc9; }
+.content2 { grid-area: content2; background: #7dffc9; }
+.content3 { grid-area: content3; background: #7dffc9; }
+
+.footer   { grid-area: footer;   background: #2fe0a3; }
+
+/* COMMON STYLES */
+.grid-container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "navbar"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+
+  .sidebar {
+    min-height: 120px;
+  }
+
+  .main {
+    min-height: 200px;
+  }
+
+  .content {
+    min-height: 120px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <header class="navbar">NAVBAR</header>
+  <aside class="sidebar">SIDEBAR</aside>
+  <main class="main">MAIN</main>
+
+  <section class="content content1">CONTENT 1</section>
+  <section class="content content2">CONTENT 2</section>
+  <section class="content content3">CONTENT 3</section>
+
+  <footer class="footer">FOOTER</footer>
+
+</div>
+
+</body>
+</html>

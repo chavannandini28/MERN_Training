@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Website Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  padding: 40px;
+}
+
+/* Outer box */
+.page {
+  max-width: 900px;
+  margin: auto;
+  border: 4px solid #000;
+  padding: 10px;
+  background: #fff;
+}
+
+/* Header & Nav */
+.header,
+.nav,
+.footer {
+  border: 2px solid #999;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Content area */
+.content-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.side,
+.main {
+  border: 2px solid #999;
+  padding: 20px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.main {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  margin-bottom: 0;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 600px) {
+  .content-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="header">Header</header>
+
+  <nav class="nav">Navigation Menu</nav>
+
+  <div class="content-area">
+    <aside class="side left">Content</aside>
+    <main class="main">Main Content</main>
+    <aside class="side right">Content</aside>
+  </div>
+
+  <footer class="footer">Footer</footer>
+
+</div>
+
+</body>
+</html>
